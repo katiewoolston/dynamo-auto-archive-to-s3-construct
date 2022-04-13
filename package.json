@@ -1,5 +1,6 @@
 {
-  "name": "dynamo-auto-archive-to-s3-construct",
+  "name": "dynamo-auto-archive-to-s3",
+  "description": "A construct that automatically archives expired dynamo records to S3",
   "repository": {
     "type": "git",
     "url": "https://github.com/katiewoolston/dynamo-auto-archive-to-s3-construct.git"
@@ -39,8 +40,6 @@
     "@types/node": "^12",
     "@typescript-eslint/eslint-plugin": "^5",
     "@typescript-eslint/parser": "^5",
-    "aws-cdk-lib": "2.1.0",
-    "constructs": "10.0.5",
     "eslint": "^8",
     "eslint-import-resolver-node": "^0.3.6",
     "eslint-import-resolver-typescript": "^2.7.1",
@@ -61,6 +60,12 @@
   "peerDependencies": {
     "aws-cdk-lib": "^2.1.0",
     "constructs": "^10.0.5"
+  },
+  "dependencies": {
+    "@aws-cdk/aws-apigatewayv2-alpha": "^2.20.0-alpha.0",
+    "@aws-cdk/aws-apigatewayv2-integrations-alpha": "^2.20.0-alpha.0",
+    "aws-cdk-lib": "^2.20.0",
+    "constructs": "^10.0.113"
   },
   "keywords": [
     "cdk"
