@@ -1,23 +1,13 @@
 import * as cdk from 'aws-cdk-lib';
 import { Template } from 'aws-cdk-lib/assertions';
-import { Construct } from 'constructs';
 import { CdkSampleLib } from '../src';
 
 describe('CdkSampleLib', () => {
-  class TestStack extends cdk.Stack {
-    constructor(scope: Construct, id: string) {
-      super(scope, id);
-
-      new CdkSampleLib(this, 'TestStack');
-    }
-  }
-
-  test('synthesizes the way we expect', () => {
+  it('synthesizes the way we expect', () => {
     const app = new cdk.App();
-
-    // Prepare the stack for assertions.
-    const processorStack = new TestStack(app, 'ProcessorStack');
-    const template = Template.fromStack(processorStack);
+    const stack = new cdk.Stack(app, 'TestStack');
+    new CdkSampleLib(stack, 'Cdk-Sample-Lib');
+    const template = Template.fromStack(stack);
 
     // Assert it creates the function with the correct properties...
     template.resourceCountIs('AWS::Lambda::Function', 1);
