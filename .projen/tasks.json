@@ -41,6 +41,22 @@
       ],
       "condition": "! git log --oneline -1 | grep -q \"chore(release):\""
     },
+    "cdk:deploy": {
+      "name": "cdk:deploy",
+      "steps": [
+        {
+          "exec": "npx cdk deploy --require-approval never --app='./lib/integ.default.js'"
+        }
+      ]
+    },
+    "cdk:destroy": {
+      "name": "cdk:destroy",
+      "steps": [
+        {
+          "exec": "npx cdk destroy --app='./lib/integ.default.js'"
+        }
+      ]
+    },
     "clobber": {
       "name": "clobber",
       "description": "hard resets to HEAD of origin and cleans the local repo",
