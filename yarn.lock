@@ -1148,6 +1148,13 @@ aws-cdk-lib@^2.20.0:
     semver "^7.3.5"
     yaml "1.10.2"
 
+aws-cdk@2.20.0:
+  version "2.20.0"
+  resolved "https://registry.yarnpkg.com/aws-cdk/-/aws-cdk-2.20.0.tgz#e3b00ecd1589777bebd1d003e32479cbfad735e1"
+  integrity sha512-rs9LTpvrlbsMcenZ3t7TuLDGbHhbnDocrE63Xb2PT++VptR/A8svllK8k1W7hPl77L9QS75GNK5gh+ShkEzsnw==
+  optionalDependencies:
+    fsevents "2.3.2"
+
 babel-jest@^27.5.1:
   version "27.5.1"
   resolved "https://registry.yarnpkg.com/babel-jest/-/babel-jest-27.5.1.tgz#a1bf8d61928edfefd21da27eb86a695bfd691444"
@@ -1370,6 +1377,13 @@ case@1.6.3, case@^1.6.3:
   version "1.6.3"
   resolved "https://registry.yarnpkg.com/case/-/case-1.6.3.tgz#0a4386e3e9825351ca2e6216c60467ff5f1ea1c9"
   integrity sha512-mzDSXIPaFwVDvZAHqZ9VlbyF4yyXRuX6IvB06WvPYkqJVO24kX1PPhv9bfpKNFZyxYFmmgo03HUiD8iklmJYRQ==
+
+cdk@^2.20.0:
+  version "2.20.0"
+  resolved "https://registry.yarnpkg.com/cdk/-/cdk-2.20.0.tgz#1ee3ab642234d5d3f3a7dacf5fe9aef73a478930"
+  integrity sha512-jWFjptQFGrgI6wDqyvbTGs/eypZ1iM4+Z2aigp2Fm+atoKvfWtn/p1x/Qp77sccgxZuvm2daFxbUrqTnvQFZ4A==
+  dependencies:
+    aws-cdk "2.20.0"
 
 chalk@^2.0.0, chalk@^2.4.2:
   version "2.4.2"
@@ -2515,7 +2529,7 @@ fs.realpath@^1.0.0:
   resolved "https://registry.yarnpkg.com/fs.realpath/-/fs.realpath-1.0.0.tgz#1504ad2523158caa40db4a2787cb01411994ea4f"
   integrity sha1-FQStJSMVjKpA20onh8sBQRmU6k8=
 
-fsevents@^2.3.2:
+fsevents@2.3.2, fsevents@^2.3.2:
   version "2.3.2"
   resolved "https://registry.yarnpkg.com/fsevents/-/fsevents-2.3.2.tgz#8a526f78b8fdf4623b709e0b975c52c24c02fd1a"
   integrity sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA==
