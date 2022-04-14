@@ -34,7 +34,7 @@
   },
   "author": {
     "name": "Katie Woolston",
-    "email": "katiewoolston@geniesolutions.com.au",
+    "email": "khwoolston@gmail.com",
     "organization": false
   },
   "devDependencies": {
@@ -75,6 +75,7 @@
   ],
   "main": "lib/index.js",
   "license": "Apache-2.0",
+  "homepage": "https://github.com/katiewoolston/dynamo-auto-archive-to-s3-construct#readme",
   "version": "0.0.0",
   "jest": {
     "testMatch": [

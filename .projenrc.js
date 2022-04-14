@@ -4,7 +4,7 @@ const PROJECT_NAME = 'dynamo-auto-archive-to-s3';
 
 const project = new awscdk.AwsCdkConstructLibrary({
   author: 'Katie Woolston',
-  authorAddress: 'katiewoolston@geniesolutions.com.au',
+  authorAddress: 'khwoolston@gmail.com',
   cdkVersion: '2.1.0',
   defaultReleaseBranch: 'main',
   name: PROJECT_NAME,
@@ -27,5 +27,10 @@ const project = new awscdk.AwsCdkConstructLibrary({
     'cdk.out',
     '.projen',
   ],
+  bugs: {
+    url: 'https://github.com/katiewoolston/dynamo-auto-archive-to-s3-construct/issues',
+  },
+  homepage: 'https://github.com/katiewoolston/dynamo-auto-archive-to-s3-construct#readme',
+
 });
 project.synth();
