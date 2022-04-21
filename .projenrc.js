@@ -31,6 +31,8 @@ const project = new awscdk.AwsCdkConstructLibrary({
     url: 'https://github.com/katiewoolston/dynamo-auto-archive-to-s3-construct/issues',
   },
   homepage: 'https://github.com/katiewoolston/dynamo-auto-archive-to-s3-construct#readme',
-
+  depsUpgradeOptions: {
+    workflow: false,
+  },
 });
 project.synth();
